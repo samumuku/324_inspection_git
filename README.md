@@ -86,7 +86,17 @@ https://github.com/ETML-RRY/324_inspection_git.git
 ### Partie 4 — Branches et fusions
 
 9. Quelles branches ont été fusionnées dans `main` ?
+
+- for remote in `git branch -r`; do git branch --track ${remote#origin/} $remote; done
+- git branch --merged
+  - feature/header
+  - feature/login
+  - hotfix/typo
+
 10. Quelle branche **n'a pas été fusionnée** ? Pourquoi, selon vous ?
+
+- experiment/dark-mode
+- car c'est en expérimentation donc on ne peut pas la merge avec main pour l'instant
 
 ### Partie 5 — Analyse du contenu
 
