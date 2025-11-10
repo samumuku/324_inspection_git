@@ -101,9 +101,31 @@ https://github.com/ETML-RRY/324_inspection_git.git
 ### Partie 5 — Analyse du contenu
 
 11. Quelle est la **différence principale** entre les fichiers `index.html` dans les versions `v0.1` et `v0.2` et quelle commande permet de le voir rapidement ?
+
+- git diff v0.1 v0.2
+  - `<header><nav><a href="/">Accueil</a> | <a href="#">Contact</a></nav></header>`
+
 12. Que contient la branche `feature/login` ?
+
+- git ls-tree -r feature/login
+  - .gitignore
+  - README.md
+  - config.js
+  - docs/notes.md
+  - index.html
+  - login.html
+  - script.js
+  - style.css
+
 13. Dans quelle branche a été ajouté le code pour le **mode sombre** ?
+
+- git branch -a
+- experiment/dark-mode
+
 14. Quelle bonne pratique de sécurité est évoquée dans les commits du fichier `config.js` ?
+
+- "// Configuration (ne doit PAS contenir de secrets en prod)"
+- "// (clé API retirée; utiliser des variables d'environnement)"
 
 ### Partie 6 — Réflexion
 
